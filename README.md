@@ -1,44 +1,41 @@
-# Commands
+# Commandlines
 
-- `terraform --version`
+1. `terraform --version`
 
-- `terraform init`
-- `terraform plan`
-- `terraform apply`
-- `terraform destroy`
+2. `terraform init`
+3. `terraform plan`
+4. `terraform apply`
+5. `terraform destroy`
 
-- `terraform state list`
-- `terraform state shown local_sensitive_file.file_name`
+6. `terraform state list`
+7. `terraform state shown local_sensitive_file.file_name`
 
-- `terraform apply -var "filename=/tmp/file.txt" -var "content=my content"`
-- `terraform apply -var-file=custom_name.tfvars`
+8. `terraform apply -var "filename=/tmp/file.txt" -var "content=my content"`
+9. `terraform apply -var-file=custom_name.tfvars`
 
 # Files:
 
-- `.terraform.lock.hcl`
-- `.terraform.tfstate`
-- `.terraform.tfstate.backup`
+1. `.terraform.lock.hcl`
+2. `.terraform.tfstate`
+3. `.terraform.tfstate.backup`
 
 # Directories
 
-- `.terraform/`
+1. `.terraform/`
 
 # Variables
 
-## commandline
+**Environment Variables**
 
-- `terraform apply -var "filename=/tmp/file.txt" -var "content=my content"`
+1. `export TF_VAR_filename="/tmp/file.txt"`
+2. `export TF_VAR_content="file content"`
 
-## environment variables
+**Files**
 
-- `export TF_VAR_filename="/tmp/file.txt"`
-- `export TF_VAR_content="file content"`
+1. `terraform.tfvars`
+2. `terraform.tfvars.json`
 
-## files
+**Commandlines**
 
-- `terraform.tfvars`
-- `terraform.tfvars.json`
-
-### commandline
-
-- `terraform apply -var-file=custom_name.tfvars`
+1. `terraform apply -var "filename=/tmp/file.txt" -var "content=my content"`
+2. `terraform apply -var-file=custom_name.tfvars`
